@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dangerous Dave 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        overflow: hidden;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      #game-container canvas {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        box-shadow: 0 0 25px rgba(0, 85, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

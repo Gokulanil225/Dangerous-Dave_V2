@@ -1,0 +1,43 @@
+{
+  "width": 40,
+  "height": 25,
+  "tilewidth": 16,
+  "tileheight": 16,
+  "layers": [
+    {
+      "name": "Entities",
+      "type": "objectgroup",
+      "objects": [
+        {
+          "id": 1,
+          "name": "DaveSpawn",
+          "type": "player_spawn",
+          "x": 64,
+          "y": 300
+        },
+        {
+          "id": 2,
+          "name": "CeilingInverter",
+          "type": "gravity_switch",
+          "x": 180,
+          "y": 320,
+          "properties": [
+            { "name": "reusable", "type": "bool", "value": true },
+            { "name": "cooldownMs", "type": "int", "value": 500 }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "FloorReverter",
+          "type": "gravity_switch",
+          "x": 320,
+          "y": 40,
+          "properties": [
+            { "name": "reusable", "type": "bool", "value": true },
+            { "name": "cooldownMs", "type": "int", "value": 500 }
+          ]
+        }
+      ]
+    }
+  ]
+}
